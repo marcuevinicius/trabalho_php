@@ -12,17 +12,17 @@ $marca = trim($_POST['marca'] ?? '');
 $quantidade = trim($_POST['quantidade'] ?? '');
 $valor_compra = trim($_POST['valor_compra'] ?? '');
 
-// 🔎 valida campos vazios
+// 
 if ($produto === '' || $marca === '' || $quantidade === '' || $valor_compra === '') {
     die("Preencha todos os campos.");
 }
 
-// 🔢 valida numéricos
+// 
 if (!is_numeric($quantidade) || !is_numeric($valor_compra)) {
     die("Quantidade e valor devem ser numéricos.");
 }
 
-// ✅ valida valores positivos
+// 
 if ($quantidade <= 0 || $valor_compra <= 0) {
     die("Valores devem ser maiores que zero.");
 }
