@@ -27,7 +27,7 @@ if ($quantidade <= 0 || $valor_compra <= 0) {
     die("Valores devem ser maiores que zero.");
 }
 
-// 💰 calcula valor de venda (30%)
+
 $valor_venda = $valor_compra * 1.30;
 
 try {
